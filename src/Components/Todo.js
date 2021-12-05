@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import "../assets/Todo.css"
 import TodoList from './TodoList.js';
 
-
 const Todo = () => {
 
     const [inputList, setInputList] = useState("");
@@ -31,8 +30,8 @@ const Todo = () => {
             <div className ="container_center">
 
                 <h1>ToDo List</h1>  <br/>
-                <form>
-
+                
+            <form>
             <input type="text" required placeholder="Enter text"
             value={inputList}  onChange={itemEvent} ></input>
             <button type="submit" onClick = {ItemsList} > + </button>
